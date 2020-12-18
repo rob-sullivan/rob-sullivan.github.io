@@ -387,4 +387,10 @@ footer{
     background-color: #00c8ff;
     grid-column: 5/12;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
