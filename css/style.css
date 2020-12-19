@@ -873,6 +873,28 @@ footer{
     text-align: center;
   }
 
+  /* INTERESTS */
+  .interest-flex-container {
+    display: flex;
+    flex-direction: column; /*content top to bottom */
+    flex-wrap: wrap; /* puts content on new line */
+    justify-content: space-around; /* adds gaps to even our content */
+  } 
+  .interest-flex-container > div {
+    color:black;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background-color: mintcream;
+    margin: 10px;
+    text-align: center;
+  }
+  .interest-flex-container img{
+    max-width: 150px;
+    max-height: 150px;
+  }
+
   /* FOOTER */
   footer{
     background-color: #00c8ff;

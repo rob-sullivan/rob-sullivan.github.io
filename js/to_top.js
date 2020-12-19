@@ -2,9 +2,9 @@
 var top_button = document.getElementById("top-button");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {showScroll()};
 
-function scrollFunction() {
+function showScroll() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         top_button.style.display = "block";
     } else {
@@ -13,7 +13,7 @@ function scrollFunction() {
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+function JumpToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
