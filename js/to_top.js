@@ -6,9 +6,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    top_button.style.display = "block";
+        top_button.style.display = "block";
     } else {
-    top_button.style.display = "none";
+        top_button.style.display = "none";
     }
 }
 
