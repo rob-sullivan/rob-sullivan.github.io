@@ -45,6 +45,17 @@
             <section id="contact">
 				<h2>Contact</h2>
 				<p>
+					<form id="contact-form" name="ContactForm" onsubmit="return validateForm()" method="post">
+						<label>Name</label>
+						<input type="text" name="name">
+						<label>Email</label>
+						<input type="email" name="email">
+						<label>Message</label>
+						<textarea name="message"></textarea>
+						<input class="submit-button" type="submit" value="Send">
+   		 			</form>
+				</p>
+				<p>
 					<table>
 						<tr>
 							<td><i class="fa fa-phone"></i></td>
@@ -316,6 +327,7 @@
 		<!-- Javascript files -->
 		<script type="text/javascript" src="js/mobile_menu.js"></script>
 		<script type="text/javascript" src="js/to_top.js"></script>
+		<script type="text/javascript" src="js/form_val.js"></script>
 		<script>
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 		</script>

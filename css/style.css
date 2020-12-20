@@ -251,7 +251,47 @@ section p, table, ol{
 ol{
   padding-left: 10%;
 }
+#contact-form, input, textarea{
+      /*using flexbox to organise the nav bar*/
+      display: flex;
+      flex-direction: column; /*content left to right */
+      flex-wrap: wrap; /* puts content on new line */
+      justify-content: space-around; /* adds gaps to even our content */ 
+      width: 80%;
 
+      color:black;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      font-weight: normal;
+      font-size: 1.68rem;
+      line-height: 1.6;
+}
+#contact-form .submit-button{
+    /*keep all buttons the same color*/
+    background-color: black;
+    color: snow;
+    
+    /*shape button as a rectangle with round sides*/
+    padding: 2px 35px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius:2.5em;
+    border: 1px solid #00c8ff;
+    
+    /*put empty space around the nav buttons*/
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    
+    /*styles the font and removes the default underline for anchor links */
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 17px; 
+    font-weight:700;
+    text-decoration: none;
+
+    /*transition slows down the nav buttons' hovering, reason is I want this to set a tone that I take my time with attention to detail */
+    transition: all 1.5s;
+
+}
 /* SKILLS SECTION */
 .skill-flex-container {
     display: flex;
