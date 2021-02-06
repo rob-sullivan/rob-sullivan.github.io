@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Ampromech - Consulting Engineers</title>
+  <meta name="description" content="A bespoke design engineering company">
+  <meta name="author" content="Ampromech">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>-->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+  <script src="js/custom.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="icon" type="image/png" href="/img/favicon.png">-->
+
+</head>
+<body>
+    <header>
+        <nav class="main-nav" id="main-nav">
+            <ul><li><a href="/#" id="logo" ><img src="img/logo.jpg" alt=""></a></li></ul>
+            <ul class="u-pull-right menu" id="nav-menu">
+                <li><a href="/#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#our-people">Our People</a></li>
+                <li><a href="https://www.linkedin.com/company/ampromech/jobs/">Careers</a></li>
+                <li><a href="mailto:info@ampromec.ie?Subject=Design Services" target="_blank" class="main-nav-button">Contact</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="toggleMobileNav();">&#9776;</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Hero -->
+    <section id="hero" class="hero u-full-width">
+      <div class="hero-image"></div>
+      <div class="container centered">
+        <div class="twelve columns hero-text">
+          <h3>Welcome to</h3>
+          <h1>Ampromech Consulting Ltd</h1>
+          <p>An Irish Engineering Consultancy serving the Datacentre, Pharma and Energy Sustainability sector. 
+            Formed in 2018, Ampromech personnel have worked with many of the high-end datacentre and pharmaceutical clients in the country.
+          </p>
+          <a href="mailto:info@ampromec.ie?Subject=Require Design Services" target="_blank" class="button button-primary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <h2 class="separator">About us</h2>
+            <p>Ampromech Consulting Ltd is a recently formed company. Its directors are Fergus Cawley and Niall Flaherty, 
+              who combined have over 50 years’ experience in the design and installation of industrial, pharmaceutical and power generation projects.<br /><br />
+              Over the last 10 years they have been largely focused on datacentre design and have worked with several hyper-scale datacentre companies. 
+              Both Niall and Fergus have worked together during that timeframe under a different umbrella and have now decided to offer a more focused, 
+              niche and responsive company to best serve the schedule and value driven requirements of the customer.<span id="dots" style="display: inline;"></span><br /><br />
+              <span id="more" style="display: none;">Ampromech have a number of experienced engineers already on-board who have previously worked with Niall and Fergus on 
+                datacentre projects over several years. The Ampromech philosophy is to create a strong core group of key people who are client focused 
+                and who understand the fast pace and realities of the datacentre environment.</span>
+            </p>
+            <button class="button button-primary" onclick="showMoreAbout()" id="ReadMoreButton">READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="design-bg-image u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <h3 class="services-header service-title"><b>Design Services</b></h3>
+            <div class="services-flex-container ">
+              <div><h5>Master Planning</h5></div>
+              <div><h5>Conceptual Design</h5></div>
+              <div><h5>Front End Study</h5></div>  
+              <div><h5>Detail Design</h5></div>
+              <div><h5>Multi Discipline Design</h5></div>
+              <div><h5>Process Design</h5></div>  
+              <div><h5>Mechanical Piping Design</h5></div>
+              <div><h5>Electrical &amp; Instrumentation Design</h5></div>
+              <div><h5>Life Safety Systems Design</h5></div>  
+              <div><h5>HVAC &amp; Building Services</h5></div>
+              <div><h5>BIM</h5></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mgmt-bg-image u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <h4 class="services-header service-title">Management &amp; Consultancy Services</h4>
+            <div class="services-flex-container">
+              <div><h5>Consultancy Support</h5></div>
+              <div><h5>Onsite Studies</h5></div>
+              <div><h5>Global cGMP Requirement Reviews</h5></div>  
+              <div><h5>Contract Strategy Advice</h5></div>
+              <div><h5>ATEX</h5></div>
+              <div><h5>PED &amp; CE Assessments</h5></div>  
+              <div><h5>Project Management</h5></div>
+              <div><h5>Estimate &amp; Cost Control</h5></div>
+              <div><h5>Procurement</h5></div>  
+              <div><h5>Master Schedule</h5></div>
+              <div><h5>P50 &amp; P80 Schedule & Cost Analysis</h5></div>
+              <div><h5>Contract &amp; Vendor Management</h5></div>
+              <div><h5>Automation Management</h5></div>
+              <div><h5>Document Control &amp; Project Handovers</h5></div>
+              <div><h5>C&amp;Q</h5></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="delivery-bg-image u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <h4 class="services-header service-title">Delivery Services</h4>
+            <div class="services-flex-container">
+              <div><h5>Construction Support</h5></div>
+              <div><h5>Onsite Studies</h5></div>
+              <div><h5>Liaison with Local &amp; Regulatory Authorities</h5></div>  
+              <div><h5>Construction Management</h5></div>
+              <div><h5>Commissioning &amp; Qualification Support</h5></div>
+              <div><h5>Regulations / EPA</h5></div>  
+              <div><h5>Health &amp; Safety Management</h5></div>
+              <div><h5>PSDP</h5></div>
+              <div><h5>PSDP / PSCS</h5></div>  
+              <div><h5>Onsite Personnel Support</h5></div>
+              <div><h5>C&amp;Q</h5></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bim-bg-image u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <h4 class="services-header service-title">BIM Coordination</h4>
+            <div class="services-body">
+              <p>As modern building design evolves and adapts to our needs, additional building services 
+                lead to a more complex exercise in coordination. The common consensus is to resolve coordination 
+                issues at the design stage before they arise onsite, leading to a more cost effective and aesthetic final installation.</p>
+              <p>Building Information Modelling (BIM) processes and tools facilitate 3D visualization and representation of every building 
+                component and material for designers, manufacturers, and installation teams. The end result for the client is a data rich 3D model, 
+                fully representative of the installation physical properties, while also capable of storing as-built Operations and 
+                Maintenance (O&M) documents and data sheets, building material thermal and space environmental properties, and parametric 
+                interactions with the built environment.The BIM team at Ampromech pool several years of experience with BIM, spread across 
+                numerous construction industry sectors:
+                <div class="services-flex-container">
+                  <div><h5>Educational facilities</h5></div>
+                  <div><h5>Biopharma installations</h5></div>
+                  <div><h5>Data Centres</h5></div>
+                  <div><h5>Health Care facilities</h5></div>
+                  <div><h5>Food &amp; Beverages</h5></div>
+                </div>
+              </p>
+                The team has worked with industry BIM standards, and has been involved with several BIM level 2 projects in both the UK and in Ireland. The team is familiar with drafting and following execution plans, employers’ requirements, and task delivery plans to BIM standards and protocols. 
+                Staff are familiar and proficient with BIM software tools such as Revit, Navisworks, IES VE. These tools allow for Ampromech to design, coordinate, and simulate environmental conditions in a 3D environment in collaboration with all project stakeholders.                     
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="power-bg-image u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <h4 class="services-header service-title">Power Generation</h4>
+            <div class="services-body">
+              <p>Power generation, as well as combined heat & power (CHP) projects are a particular area of expertise in Ampromech. We have direct hands on experience in all areas of power generation, ranging for combined cycle power plants with gas and steam turbines, as well as smaller simple cycle gas turbine power stations.</p>
+              <p>As well as power supply, we have 30 years experience in the specification and design of emergency power systems for critical applications using on-site diesel generation.</p>
+              <p>More recently we have been heavily involved in CHP (combine heat and power) projects wherein electrical power is generated withing a facility using natural gas as a fuel,  and the heat generated during the combustion process is then harnessed and used to provide thermal energy for the facility in the form of steam and hotwater.</p>        
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid-bg-image u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <h4 class="services-header service-title">Arc Flash</h4>
+            <div class="services-body">
+              <p>We can carry out full arc flash assessments and reporting on existing and new facilities to ensure maximum personnel safety in switchrooms and near energised electrical equipment.  We first build a model of the electrical infrastructure and look at all possible paths and magnitudes of power flow. Using SKM we can then generate a report identifying arc flash risks and boundaries and issue labels for all relevant equipment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section  id="projects" class="work u-full-width" >
+      <div class="container" id="project0" style="display: block;">
+        <div class="row">
+          <div class="twelve columns">
+            <h3 class="separator">Project Portfolio</h3>
+          </div>
+        </div>
+        <div class="row">
+            <ul class="work-items isotope js-isotope u-cf">
+            <li class="four columns isotope-item design ui">
+                <img src="img/bottles.jpeg">
+                <div class="work-detail">
+                <div class="vertical-centered">
+                    <p class="separator">FOOD & BEVERAGE (PABC)</p>
+                    <button class="button button-primary" onclick="showProject(1)" id="ReadMoreButton">Read More</button>
+                </div>
+                </div>
+            </li>
+            <li class="four columns isotope-item branding web-design">
+                <img src="img/cleanroom.jpg">
+                <div class="work-detail">
+                <div class="vertical-centered">
+                    <p class="separator">Medical Device &amp; Biopharma</p>
+                    <button class="button button-primary" onclick="showProject(2)" id="ReadMoreButton">Read More</button>
+                </div>
+                </div>
+            </li>
+            <li class="four columns isotope-item mobile ui branding">
+                <img src="img/cinema.jpg">
+                <div class="work-detail">
+                <div class="vertical-centered">
+                    <p class="separator">CINEMA LIFE SAFETY SYSTEMS</p>
+                    <button class="button button-primary" onclick="showProject(3)" id="ReadMoreButton">Read More</button>
+                </div>
+                </div>
+            </li>
+            <li class="four columns isotope-item mobile illustrations">
+                <img src="img/heart.jpeg">
+                <div class="work-detail">
+                <div class="vertical-centered">
+                    <p class="separator">HEALTHCARE FACILITIES</p>
+                    <button class="button button-primary" onclick="showProject(4)" id="ReadMoreButton">Read More</button>
+                </div>
+                </div>
+            </li>
+            <li class="four columns isotope-item illustrations branding">
+                <img src="img/school.jpg">
+                <div class="work-detail">
+                <div class="vertical-centered">
+                    <p class="separator">EDUCATIONAL</p>
+                    <button class="button button-primary" onclick="showProject(5)" id="ReadMoreButton">Read More</button>
+                </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+      </div>
+    <!-- FOOD & BEVERAGE -->
+      <div class="container" id="project1" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <h2 class="separator">FOOD & BEVERAGE (PABC)</h2>
+            <p>A 30,000m² existing distribution facility was redeveloped, at a cost of €XXm, by a leading US soft drinks company in Ireland. The team worked within a design build contract with one of Irelands leading construction firms, leading the design for electrical, mechanical and controls services and collaborating on the process systems services for the project.</p>
+            <p>The design facilitated both classified hazardous area and cleanroom design requirements and specifications. The provision of services for multiple process systems vendors was allowed for in collaboration with process systems designers. </p>
+            <p>Coordination of all services and construction materials was achieved through BIM processes and technologies. The scope of the project included for design, specification, tender analysis, and construction management.</p>
+            </p>
+            <button class="button button-primary" onclick="showProject(1)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+    <!-- MEDICAL DEVICES AND BIOPHARMA -->
+      <div class="container" id="project2" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <h2 class="separator">MEDICAL DEVICES &amp; BIOPHARMA</h2>
+            <p>The team has been involved in several projects for a Medical Device Specialist in the eastern region of Ireland. These projects have included CHP design and construction management, service design and coordination in repurposed existing spaces, to the design of building extensions and integration with existing services and plant.</p>
+            <p>These projects cover a wide range of project activities from budget and cost analysis and projections, to tender and construction document preparation and management, and design of mechanical and electrical systems for each different area of the facility. </p>
+            <button class="button button-primary" onclick="showProject(2)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+      <!-- CINEMA LIFE SAFETY SYSTEMS -->
+      <div class="container" id="project3" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <h2 class="separator">CINEMA LIFE SAFETY SYSTEMS</h2>
+            <p>The team has been involved in the design of life safety systems for new and refurbished cinema units throughout Ireland over the past few years for a leading company in the entertainment industry in Ireland. </p>
+            <p>Construction management, site inspections and snagging, and BCAR certification were requirements for these projects. </p>
+            <button class="button button-primary" onclick="showProject(3)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+      <!-- HEALTHCARE FACILITIES -->
+      <div class="container" id="project4" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <h2 class="separator">HEALTHCARE FACILITIES</h2>
+            <p>The team has been involved in several healthcare facility projects in Ireland and in the UK over the past decade. The facilities have ranged from primary care units, to Children’s hospitals, and multi-story critical treatment centres. Adherence to Health Technical Memoranda (HTM) is at all times crucial to the success delivery of these projects. </p>
+            <p>These facilities were design for Intensive and Critical Care Units, High Dependency Units, resuscitation bays, Cardiac Wards, etc. Isolated Power Supply units, critical and redundant supplies, onsite backup generation, and emergency evaluation lifts, to name but a few, were all common throughout these facilities, and had to be facilitated for in the mechanical and electrical designs. </p>
+            <button class="button button-primary" onclick="showProject(4)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+      <!-- EDUCATIONAL -->
+      <div class="container" id="project5" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <h2 class="separator">EDUCATIONAL</h2>
+            <p>The team has several years’ experience on working on first, second, and third level educational facilities in Ireland and the UK. These projects have ranged from existing school refurbishments and extensions, to new facilities on greenfield sites, and development of multi-story third level campus dorm buildings and science and law faulty installations. </p>
+            <p>Adherence to department of education guidelines and local building regulations was fundamental in all of these projects. </p>
+            <button class="button button-primary" onclick="showProject(5)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our People -->
+    <section  id="our-people" class="about u-full-width">
+      <div class="container" id="people0" style="display: block;">
+        <div class="row">
+          <div class="twelve columns">
+            <h3 class="separator">Our People</h3>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="people-list">
+            <li class="four columns people-list-item">
+              <img class="people-image" src="img/people/fergus-cawley.jpg">
+              <div class="people-hover">
+                <a onclick="showPeople(1)"><i class="fa fa-external-link"></i></a>
+                <div class="people-detail">
+                  <h3>Fergus</h3>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li class="four columns people-list-item">
+              <img class="people-image" src="img/people/niall-flaherty.jpg">
+              <div class="people-hover">
+                <a onclick="showPeople(2)"><i class="fa fa-external-link"></i></a>
+                <div class="people-detail">
+                  <h3>Niall</h3>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li class="four columns people-list-item">
+              <img class="people-image" src="img/people/brian-meegan.jpg">
+              <div class="people-hover">
+                <a onclick="showPeople(3)"><i class="fa fa-external-link"></i></a>
+                <div class="people-detail">
+                  <h3>Brian</h3>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="people-list">
+            <li class="four columns people-list-item">
+              <img class="people-image" src="img/people/stephen-totten.jpg">
+              <div class="people-hover">
+                <a onclick="showPeople(4)"><i class="fa fa-external-link"></i></a>
+                <div class="people-detail">
+                  <h3>Stephen</h3>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li class="four columns people-list-item">
+              <img class="people-image" src="img/people/kieran-goode.jpg">
+              <div class="people-hover">
+                <a onclick="showPeople(5)"><i class="fa fa-external-link"></i></a>
+                <div class="people-detail">
+                  <h3>Kieran</h3>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li class="four columns people-list-item blank-feature">
+              <div class="vertical-centered">
+                <h3 class="separator">WE ARE HIRING</h3>
+                <a href="https://www.linkedin.com/company/ampromech/jobs/" class="button button-primary">Apply</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Fergus -->
+      <div class="container" id="people1" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <img src="img/people/fergus-cawley.jpg" alt="">
+            <h5 class="">Fergus Crawley</h5>
+            <p>Fergus has a degree in Electrical engineering from UCC, and has spent many years working on power generation projects as a start-up and commissioning engineer for Westinghouse Power Generation on multiple gas and steam turbine power plants world, including the UK, Korea and South America. Subsequently Fergus worked for Pfizer in the Pharmaceutical industry and then used his power generation experience to further the use of CHP (combined heat and power) installations in Ireland and in the UK. From 2010 Fergus has been involved in multiple DC projects, primarily in Ireland and Europe.</p>
+            <button class="button button-primary" onclick="showPeople(1)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+      <!-- Niall -->
+      <div class="container" id="people2" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <img class="people-image" src="img/people/niall-flaherty.jpg">
+            <h5 class="">Niall Flaherty</h5>
+            <p>Niall has a degree in mechanical engineering and worked initially in the semi-conductor and pharmaceutical industries. He joined a design consultancy in 2007 and worked predominantly in the pharma and datacentre industry during that time. While there, he was lead mechanical design on multiple datacentre developments and was also heavily involved in the master planning and MEP management for multiple different projects. Most recently he was MEP project manager for two datacentre buildings which were predominantly focused upon utilising a modular design for electrical plant rooms.</p>
+            <button class="button button-primary" onclick="showPeople(2)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+      <!-- Brian -->
+      <div class="container" id="people3" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <img class="people-image" src="img/people/brian-meegan.jpg">
+            <h5 class="">Brian Meegan</h5>
+            <p>Brian’s role is that of Principal Electrical Engineer at Ampromech, having joined the company in late 2020, and has nearly 20 years’ experience in the construction industry spread across multiple roles and sectors.</p>
+            <p>Brian began his career as an electrician in 2001 and achieved qualification status while working on industrial, commercial, and domestic installation projects. Following further study with a BSc in Energy Engineering Systems Brian took up an electrical engineering post with one of the UKs leading M&E consultancies in Bristol in 2013, where he worked on the design of university and health care projects for the next two years.</p>
+            <p>Following a move back to Ireland in 2015, Brian took up a position in one of Ireland’s leading Mechanical Electrical and Process systems consultancies, whereupon he became manager of Electrical Engineering and BIM. Brian collaborated in and led projects that included retail, data centres, educational, biopharma, and food and beverage, among others. During his time in this role, Brian further progressed his studies with a MSc in Building Information Modelling and Management.</p>
+            <button class="button button-primary" onclick="showPeople(3)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+      <!-- Stephen Totten -->
+      <div class="container" id="people4" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <img class="people-image" src="img/people/stephen-totten.jpg">
+            <h5 class="">Stephen Totten</h5>
+            <p>Stephen has almost 40 years’ experience in the industrial and pharmaceutical arenas. He has worked on datacentres for multiple clients particularly focusing on SCADA, BMS, EMS and security while also having an extensive knowledge of LV distribution design . Stephen has an extensive CV and has worked for major multi-national companies such as Millipore, Pfizer, Rottapharm, Amgen and Leo Pharma. He has been involved in the controls systems design for multiple process and utility projects</p>
+            <button class="button button-primary" onclick="showPeople(4)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+      <!-- Kieran Goode -->
+      <div class="container" id="people5" style="display: none;">
+        <div class="row">
+          <div class="twelve columns">
+            <img class="people-image" src="img/people/kieran-goode.jpg">
+            <h5 class="">Kieran Goode</h5>
+            <p>Kieran has more than 40 years’ experience as a professional engineer in the Datacentre, Industrial and Pharmaceutical Industries.</p>
+            <p>Kieran is a highly regarded expert within the mechanical engineering field and is fully versed in latest environmental and sustainability technologies pertaining to cooling systems and heat transfer. Kieran has worked on major projects in Ireland, the Middle East and Africa. Kieran has specific experience as a design engineer on a variety of project types for major multi-national companies from concept through to handover</p>
+            <button class="button button-primary" onclick="showPeople(5)" id="ReadMoreButton">BACK</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <section data-sr class="footer u-full-width">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <h5><a href="https://www.linkedin.com/company/ampromech/" class="linkedin-icon"><i class="fa fa-linkedin-square"></i></a> &copy Ampromech Consulting Ltd 2021 | CRO 625359 | VAT 3646413JH</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Javascript files -->
+    <script src="js/custom.js"></script>
+		<script type="text/javascript" src="js/mobile_menu.js"></script>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
