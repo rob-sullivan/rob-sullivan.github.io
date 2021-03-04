@@ -15,6 +15,8 @@
 }
 
 .navbar {
+  position: relative;
+  z-index: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -117,7 +119,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.05em;
   text-indent: 0px;
 }
@@ -214,10 +216,12 @@
 
 .about {
   background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.1)), to(hsla(0, 0%, 100%, 0.1))), url('../images/AboutUs.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url('../images/AboutUs.jpg');
-  background-position: 0px 0px, 0px 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.48)), to(hsla(0, 0%, 100%, 0.48))), url('../images/AboutUs.jpg');
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.48), hsla(0, 0%, 100%, 0.48)), url('../images/AboutUs.jpg');
+  background-position: 0px 0px, 50% 100%;
   background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  letter-spacing: normal;
   background-clip: border-box;
 }
 
@@ -283,22 +287,41 @@
 }
 
 .our-services {
-  background-color: transparent;
-  background-image: none;
-  background-position: 0px 0px;
-  background-size: auto;
+  background-color: rgba(0, 0, 0, 0.05);
   background-clip: border-box;
 }
 
 .our-services-header {
+  display: block;
+  padding-left: 15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
+  text-align: left;
+  letter-spacing: normal;
+  text-transform: uppercase;
 }
 
 .our-services-img {
+  max-width: 100%;
+  margin-bottom: 20%;
+  padding-right: 10%;
+  padding-left: 15%;
   border-radius: 6px;
+  text-align: left;
 }
 
 .paragraph-2 {
@@ -314,9 +337,6 @@
 
 .projects {
   background-color: transparent;
-  background-image: none;
-  background-position: 0px 0px;
-  background-size: auto;
   background-clip: border-box;
 }
 
@@ -333,8 +353,6 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10%;
-  margin-bottom: 10%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -351,8 +369,8 @@
 }
 
 .div-block-4 {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 
 .container-3 {
@@ -361,19 +379,35 @@
 }
 
 .div-block-5 {
-  margin-top: auto;
-  margin-bottom: 10px;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 
-.div-block-6 {
-  margin-bottom: 0%;
+.our-services-column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 5%;
+  padding-left: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .our-people {
-  background-color: transparent;
-  background-image: none;
-  background-position: 0px 0px;
-  background-size: auto;
+  background-color: rgba(0, 0, 0, 0.05);
   background-clip: border-box;
 }
 
@@ -398,14 +432,20 @@
 }
 
 .our-people-img {
+  max-height: 50%;
+  max-width: 50%;
+  margin-bottom: 5%;
   border-radius: 6px;
 }
 
 .our-people-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -422,8 +462,11 @@
 }
 
 .paragraph-3.our-people-text {
+  margin-bottom: 0px;
+  padding-right: 5%;
+  padding-left: 5%;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 30px;
   letter-spacing: 0.05px;
 }
 
@@ -435,17 +478,19 @@
 }
 
 .container-4 {
-  margin-top: 10%;
+  margin-top: 0%;
   margin-bottom: 10%;
 }
 
 .careers-column {
+  padding-right: 0px;
+  padding-left: 0%;
   font-size: 16px;
 }
 
 .contact-us {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 88.2%, 0)), to(hsla(0, 0%, 88.2%, 0))), url('../images/ContactUs_ProcessBackground.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 88.2%, 0), hsla(0, 0%, 88.2%, 0)), url('../images/ContactUs_ProcessBackground.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 88.2%, 0.51)), to(hsla(0, 0%, 88.2%, 0.51))), url('../images/ContactUs_ProcessBackground.jpg');
+  background-image: linear-gradient(180deg, hsla(0, 0%, 88.2%, 0.51), hsla(0, 0%, 88.2%, 0.51)), url('../images/ContactUs_ProcessBackground.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
 }
@@ -453,18 +498,20 @@
 .contact-us-paragraph {
   overflow: visible;
   margin-top: 10%;
-  margin-bottom: 20%;
-  border-radius: 6px;
-  box-shadow: 1px 1px 3px 0 #000;
+  margin-bottom: 15%;
+  padding-right: 20%;
+  padding-left: 20%;
+  border: 0px none #000;
+  border-radius: 0px;
   opacity: 1;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 18px;
-  line-height: 50px;
+  font-size: 1.6em;
+  line-height: 36px;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
   -o-object-fit: fill;
   object-fit: fill;
 }
@@ -476,13 +523,15 @@
 .our-services-item {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 0px;
+  padding-left: 20px;
+  font-size: 18px;
+  text-align: left;
   text-transform: none;
 }
 
 .div-block-7 {
-  margin-top: auto;
-  margin-bottom: auto;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 
 .container-5 {
@@ -490,13 +539,16 @@
   margin-bottom: 10%;
 }
 
-.career-paragraph {
+.career-text {
+  margin-left: 0%;
+  padding-right: 7.5%;
+  padding-left: 0%;
   font-family: Raleway, sans-serif;
   color: #191465;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 30px;
   text-align: justify;
-  letter-spacing: 0.05px;
+  letter-spacing: normal;
 }
 
 .container-6 {
@@ -542,7 +594,8 @@
 }
 
 .div-block-8 {
-  margin-top: 20%;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 
 .div-block-9 {
@@ -573,6 +626,143 @@
   background-size: contain;
   background-repeat: no-repeat;
   color: transparent;
+}
+
+.about-text {
+  margin-bottom: 1%;
+  padding-right: 20%;
+  padding-left: 20%;
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-size: 1.6em;
+  line-height: 36px;
+  text-align: justify;
+  letter-spacing: 0.01px;
+}
+
+.about-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-8 {
+  position: static;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.services-header-text {
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.columns {
+  display: block;
+  padding-right: 5%;
+  padding-left: 5%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.projects-header-text {
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.our-other-people-sub-header {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-right: 3%;
+  padding-left: 3%;
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+}
+
+.our-other-people-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 3%;
+  padding-left: 3%;
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.our-other-people-text {
+  margin-bottom: 3%;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.grid {
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+.div-block-10 {
+  padding-left: 6%;
+}
+
+.div-block-11 {
+  padding-left: 6%;
+}
+
+.div-block-12 {
+  padding-right: 6%;
+}
+
+.div-block-13 {
+  padding-right: 6%;
+}
+
+.career-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-us-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 991px) {
@@ -627,6 +817,10 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .our-other-people-header {
+    padding-left: 2.5%;
   }
 }
 

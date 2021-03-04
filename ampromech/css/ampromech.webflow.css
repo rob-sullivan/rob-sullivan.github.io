@@ -1,3 +1,7 @@
+a {
+  text-decoration: underline;
+}
+
 .image {
   display: inline-block;
   padding-top: 5px;
@@ -116,8 +120,8 @@
   padding-left: 5%;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.3em;
+  line-height: 1.6em;
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.05em;
@@ -308,7 +312,8 @@
   flex: 1;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 24px;
+  font-size: 2em;
+  line-height: 1.6em;
   font-weight: 400;
   text-align: left;
   letter-spacing: normal;
@@ -343,9 +348,10 @@
 .projects-header {
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 34px;
+  font-size: 2em;
   font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .projects-column {
@@ -438,21 +444,26 @@
   border-radius: 6px;
 }
 
-.our-people-header {
+.our-people-header-text {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 30px;
+  font-size: 3em;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }
 
 .our-people-text {
+  padding-right: 5%;
+  padding-left: 5%;
   font-family: Raleway, sans-serif;
   color: #191465;
+  font-size: 1.3em;
+  line-height: 1.6em;
   text-align: justify;
+  letter-spacing: 0.001px;
 }
 
 .paragraph-3 {
@@ -465,7 +476,7 @@
   margin-bottom: 0px;
   padding-right: 5%;
   padding-left: 5%;
-  font-size: 16px;
+  font-size: 1.3em;
   line-height: 30px;
   letter-spacing: 0.05px;
 }
@@ -507,7 +518,7 @@
   font-family: Raleway, sans-serif;
   color: #191465;
   font-size: 1.6em;
-  line-height: 36px;
+  line-height: 1.6em;
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.01em;
@@ -524,7 +535,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 20px;
-  font-size: 18px;
+  font-size: 1.2em;
   text-align: left;
   text-transform: none;
 }
@@ -545,8 +556,8 @@
   padding-left: 0%;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 1.3em;
+  line-height: 1.6em;
   text-align: justify;
   letter-spacing: normal;
 }
@@ -634,7 +645,7 @@
   padding-left: 20%;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 1.6em;
+  font-size: 1.3em;
   line-height: 36px;
   text-align: justify;
   letter-spacing: 0.01px;
@@ -646,6 +657,8 @@
   padding-top: 0px;
   font-family: Raleway, sans-serif;
   color: #191465;
+  font-size: 3em;
+  line-height: 1.6em;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -660,6 +673,8 @@
 .services-header-text {
   font-family: Raleway, sans-serif;
   color: #191465;
+  font-size: 3em;
+  line-height: 1.6em;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -679,19 +694,20 @@
 .projects-header-text {
   font-family: Raleway, sans-serif;
   color: #191465;
+  font-size: 3em;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }
 
-.our-other-people-sub-header {
+.our-other-people-sub-header-2 {
   margin-top: 0px;
   margin-bottom: 10px;
   padding-right: 3%;
   padding-left: 3%;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 28px;
+  font-size: 1.6em;
   font-weight: 400;
   text-align: left;
   text-transform: none;
@@ -716,8 +732,8 @@
   padding-left: 5%;
   font-family: Raleway, sans-serif;
   color: #191465;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 1.3em;
+  line-height: 1.6em;
   text-align: justify;
 }
 
@@ -765,6 +781,25 @@
   text-transform: uppercase;
 }
 
+.our-people-subheader-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Raleway, sans-serif;
+  color: #191465;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.email-links {
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 991px) {
   .nav-menu {
     border: 1px none #191465;
@@ -775,8 +810,67 @@
     margin-right: 0px;
   }
 
+  .hero-text {
+    padding-right: 15%;
+    padding-left: 15%;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-transform: none;
+  }
+
+  .hero-image {
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: 13%;
+    text-align: left;
+  }
+
+  .nav-link {
+    font-size: 0.75em;
+  }
+
+  .nav-link-2 {
+    font-size: 0.75em;
+  }
+
+  .nav-link-3 {
+    font-size: 0.75em;
+  }
+
+  .nav-link-4 {
+    font-size: 0.75em;
+  }
+
+  .nav-link-5 {
+    font-size: 0.75em;
+  }
+
+  .nav-link-6 {
+    font-size: 0.75em;
+  }
+
+  .nav-link-7 {
+    font-size: 0.75em;
+  }
+
   .our-services-header {
+    margin-top: 0px;
+    padding-left: 0px;
+    font-size: 1.6em;
+    line-height: 1.6em;
     text-align: center;
+  }
+
+  .our-services-img {
+    margin-bottom: 10%;
+  }
+
+  .projects-img {
+    max-width: 75%;
+  }
+
+  .projects-header {
+    font-size: 1.6em;
   }
 
   .our-services-column {
@@ -784,6 +878,8 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    padding-right: 0%;
+    padding-left: 0%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -819,20 +915,232 @@
     align-items: center;
   }
 
+  .our-people-header-text {
+    font-size: 3em;
+  }
+
+  .our-people-text {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: justify;
+    letter-spacing: 0.001em;
+  }
+
+  .our-services-item {
+    padding-left: 0px;
+    font-size: 1.1em;
+  }
+
+  .about-text {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    letter-spacing: 0.001px;
+  }
+
+  .about-header {
+    font-size: 3em;
+  }
+
+  .projects-header-text {
+    font-size: 3em;
+  }
+
+  .our-other-people-sub-header-2 {
+    font-size: 1.6em;
+  }
+
   .our-other-people-header {
     padding-left: 2.5%;
+  }
+
+  .our-other-people-text {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    letter-spacing: 0.001em;
+  }
+
+  .our-people-subheader-text {
+    font-size: 2em;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .hero-text {
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+
   .image-4 {
     margin-right: 35%;
+  }
+
+  .our-services-header {
+    line-height: 1.6em;
+  }
+
+  .our-services-img {
+    max-width: 50%;
+    margin-bottom: 2%;
+    margin-left: 22%;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+
+  .projects-img {
+    max-width: 50%;
+  }
+
+  .our-people-header-text {
+    font-size: 2em;
+  }
+
+  .our-people-text {
+    padding-right: 10%;
+    padding-left: 8%;
+  }
+
+  .our-services-item {
+    padding-top: 0px;
+    font-size: 1.3em;
+    letter-spacing: 0.001px;
+    text-transform: none;
+  }
+
+  .career-text {
+    padding-right: 8%;
+    padding-left: 8%;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    letter-spacing: 0.001px;
+  }
+
+  .text-block {
+    font-size: 1em;
+  }
+
+  .about-text {
+    line-height: 1.6em;
+  }
+
+  .about-header {
+    font-size: 2em;
+  }
+
+  .services-header-text {
+    font-size: 2em;
+  }
+
+  .projects-header-text {
+    font-size: 2em;
+  }
+
+  .our-other-people-sub-header-2 {
+    font-size: 1.7em;
+  }
+
+  .our-other-people-text {
+    padding-right: 8%;
+    padding-left: 8%;
+  }
+
+  .our-people-subheader-text {
+    font-size: 1.8em;
   }
 }
 
 @media screen and (max-width: 479px) {
+  .our-services-header {
+    font-size: 1.3em;
+    line-height: 1.6em;
+  }
+
+  .our-services-img {
+    margin-bottom: 5%;
+    margin-left: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+
+  .projects-img {
+    max-width: 50%;
+  }
+
+  .our-people-text {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .careers-column.career-column-img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .contact-us-paragraph {
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
+
+  .our-services-item {
+    font-size: 1em;
+  }
+
+  .career-text {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    letter-spacing: 0.001px;
+  }
+
+  .text-block {
+    font-family: Raleway, sans-serif;
+    font-size: 0.65em;
+  }
+
   .button-2 {
     padding-left: 4%;
+  }
+
+  .about-text {
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+
+  .about-header {
+    font-size: 2em;
+  }
+
+  .services-header-text {
+    font-size: 2em;
+    line-height: 1.6em;
+  }
+
+  .our-other-people-sub-header-2 {
+    font-size: 1.5em;
+  }
+
+  .career-header {
+    font-size: 2em;
+  }
+
+  .contact-us-header {
+    font-size: 2em;
+  }
+
+  .our-people-subheader-text {
+    font-size: 1.6em;
   }
 }
 

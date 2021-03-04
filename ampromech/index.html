@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Mar 03 2021 22:24:16 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Mar 04 2021 09:37:18 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="603e23274916bb937bca5f4c" data-wf-site="603e23274916bb7931ca5f4b">
 <head>
   <meta charset="utf-8">
@@ -17,17 +17,17 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
-  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
+  <div data-collapse="small" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
     <div class="container w-container">
       <a href="#" class="brand w-nav-brand"><img src="images/Homepage.jpg" loading="lazy" width="192" sizes="(max-width: 479px) 95vw, 192px" srcset="images/Homepage-p-500.jpeg 500w, images/Homepage-p-800.jpeg 800w, images/Homepage.jpg 1247w" alt="" class="image"></a>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <a href="#" class="nav-link-2 w-nav-link">Home</a>
         <a href="#about" class="nav-link-3 w-nav-link">About</a>
-        <a href="#our-service" class="nav-link-4 w-nav-link">Services</a>
+        <a href="#our-services" class="nav-link-4 w-nav-link">Services</a>
         <a href="#projects" class="nav-link-5 w-nav-link">Projects</a>
         <a href="#our-people" class="nav-link-6 w-nav-link">Our People</a>
         <a href="#careers" class="nav-link-7 w-nav-link">Careers</a>
-        <a href="mailto:info@ampromec.ie?Subject=Design Services" class="nav-link w-nav-link">Contact</a>
+        <a href="mailto:info@ampromec.ie?Subject=Design%20Services" class="nav-link w-nav-link">Contact</a>
       </nav>
       <div class="w-nav-button">
         <div class="w-icon-nav-menu"></div>
@@ -37,7 +37,7 @@
   <div class="home">
     <div class="hero-banner"></div>
     <div class="w-container">
-      <div><img src="images/Homepage.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcset="images/Homepage-p-500.jpeg 500w, images/Homepage-p-800.jpeg 800w, images/Homepage.jpg 1247w" alt="" class="hero-image">
+      <div><img src="images/Homepage.jpg" loading="lazy" sizes="(max-width: 767px) 75vw, (max-width: 991px) 95vw, 940px" srcset="images/Homepage-p-500.jpeg 500w, images/Homepage-p-800.jpeg 800w, images/Homepage.jpg 1247w" alt="" class="hero-image">
         <p class="hero-text">An Irish Engineering Consultancy Serving the Datacentre, Pharma and Energy Sustainability sector. Formed in 2018, Ampromech personnel have worked with many of the high-end datacentre and pharmaceutical clients in the country.</p>
       </div>
       <div class="div-block-2">
@@ -45,7 +45,7 @@
       </div>
     </div>
   </div>
-  <div class="about">
+  <div id="about" class="about">
     <div class="div-block-4">
       <h1 class="about-header">About</h1>
       <div class="seperator"></div>
@@ -54,7 +54,7 @@
       <p class="about-text">Ampromech have an experienced team of engineers on-board who have previously worked on multiple design projects over several years. The Ampromech philosophy is to utilise a strong core group of key people who are client focused and who understand the fast pace and realities of the current fast track project environment.  </p>
     </div>
   </div>
-  <div class="our-services">
+  <div id="our-services" class="our-services">
     <div class="div-block-5">
       <h1 class="services-header-text">Our Services</h1>
       <div class="seperator"></div>
@@ -63,8 +63,8 @@
           <h1 class="our-services-header">Design</h1>
           <ul role="list" class="our-services-list w-list-unstyled">
             <li class="our-services-item">- Master Planning</li>
-            <li class="our-services-item">- Mechanical, Electrical and Control Design</li>
-            <li class="our-services-item">- Building Information Modelling (BIM)</li>
+            <li class="our-services-item">- Mechanical, Electrical <br>&amp; Control Design</li>
+            <li class="our-services-item">- Building Information <br>Modelling (BIM)</li>
           </ul>
         </div>
         <div class="our-services-column w-col w-col-4"><img src="images/ManagementConsultancyServices.jpg" loading="lazy" alt="" class="our-services-img">
@@ -80,13 +80,13 @@
           <ul role="list" class="our-services-list w-list-unstyled">
             <li class="our-services-item">- Construction Support</li>
             <li class="our-services-item">- Online Studies</li>
-            <li class="our-services-item">- Commissioning &amp; Qualification (C&amp;Q)</li>
+            <li class="our-services-item">- Commissioning <br>&amp; Qualification (C&amp;Q)</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="projects">
+  <div id="projects" class="projects">
     <div class="div-block-7">
       <h1 class="projects-header-text">Projects</h1>
       <div class="seperator"></div>
@@ -103,72 +103,75 @@
       </div>
     </div>
   </div>
-  <div class="our-people">
+  <div id="our-people" class="our-people">
     <div class="div-block-5">
-      <h1 class="our-people-header">Our People</h1>
+      <h1 class="our-people-header-text">Our People</h1>
       <div class="seperator"></div>
       <div class="w-row">
         <div class="our-people-column w-col w-col-6"><img src="images/FergusCawley.jpg" loading="lazy" width="300" alt="" class="our-people-img">
-          <h1 class="our-people-header">Fergus Cawley<br></h1>
-          <h1 class="our-other-people-sub-header">Director</h1>
-          <p class="paragraph-3 our-people-text">Fergus has a degree in electrical engineering from UCC, and has spent many years working on power generation projects as a start-up and commissioning engineer for Westinghouse Power Generation on multiple gas and steam turbine power plants all over the world, including the UK, Korea and South America. Subsequently Fergus worked for Pfizer in the pharmaceutical industry and then used his power generation experience to further the use of CHP (combined heat and power) installations in Ireland and in the UK. From 2010 Fergus has been involved in multiple DC projects, primarily in Ireland and Europe.</p>
+          <h1 class="our-people-subheader-text">Fergus Cawley<br></h1>
+          <h1 class="our-other-people-sub-header-2">Director</h1>
+          <p class="our-people-text">Fergus has a degree in electrical engineering from UCC, and has spent many years working on power generation projects as a start-up and commissioning engineer for Westinghouse Power Generation on multiple gas and steam turbine power plants all over the world, including the UK, Korea and South America. Subsequently Fergus worked for Pfizer in the pharmaceutical industry and then used his power generation experience to further the use of CHP (combined heat and power) installations in Ireland and in the UK. From 2010 Fergus has been involved in multiple DC projects, primarily in Ireland and Europe.</p>
         </div>
         <div class="our-people-column w-col w-col-6"><img src="images/NiallFlaherty.jpg" loading="lazy" width="300" alt="" class="our-people-img">
-          <h1 class="our-people-header">Niall Flaherty</h1>
-          <h1 class="our-other-people-sub-header">Director</h1>
-          <p class="our-people-text paragraph-3">Niall has a degree in mechanical engineering and worked initially in the semi-conductor and pharmaceutical industries. He joined a design consultancy in 2007 and worked predominantly in the pharma and datacentre industry during that time. While there, he was lead mechanical designer on multiple datacentre developments and was also heavily involved in the master planning and MEP management for multiple different projects. Most recently he was MEP Project Manager for two datacentre buildings which were predominantly focused upon utilising a modular design for electrical plant rooms.</p>
+          <h1 class="our-people-subheader-text">Niall Flaherty</h1>
+          <h1 class="our-other-people-sub-header-2">Director</h1>
+          <p class="our-people-text">Niall has a degree in mechanical engineering and worked initially in the semi-conductor and pharmaceutical industries. He joined a design consultancy in 2007 and worked predominantly in the pharma and datacentre industry during that time. While there, he was lead mechanical designer on multiple datacentre developments and was also heavily involved in the master planning and MEP management for multiple different projects. Most recently he was MEP Project Manager for two datacentre buildings which were predominantly focused upon utilising a modular design for electrical plant rooms.</p>
         </div>
       </div>
     </div>
   </div>
   <div class="our-people-other">
     <div class="div-block-4">
-      <h1 class="our-people-header">Our People</h1>
+      <h1 class="our-people-header-text">Our People</h1>
       <div class="seperator"></div>
       <div class="w-row">
         <div class="our-people-column w-col w-col-6">
-          <h1 class="our-other-people-header">Brian Meegan<br></h1>
-          <h1 class="our-other-people-sub-header">Principal Electrical Engineer</h1>
+          <h1 class="our-people-subheader-text">Brian Meegan<br></h1>
+          <h1 class="our-other-people-sub-header-2">Principal Electrical Engineer</h1>
           <p class="our-other-people-text">Brian brings 20 years’ experience in the construction industry spread across multiple roles and sectors and holds a BSc in Energy Engineering Systems and a MSc in Building Information Modelling and Management. Working as an Electrical Engineer and subsequently Manager of Electrical Engineering and BIM with leading Ireland and UK M&amp;E consultancies, Brian collaborated in and led multiple projects within retail, data centres, educational, biopharma, health care, and food &amp; beverage industries, among others.<br>‍</p>
-          <h1 class="our-other-people-header">Kieran Goode</h1>
-          <h1 class="our-other-people-sub-header">Senior Mechanical Engineer</h1>
+          <h1 class="our-people-subheader-text">Kieran Goode</h1>
+          <h1 class="our-other-people-sub-header-2">Senior Mechanical Engineer</h1>
           <p class="our-other-people-text">Kieran has more than 40 years’ experience as a professional engineer in the datacentre, industrial and pharmaceutical industries. Kieran is a highly regarded expert within the mechanical engineering field and is fully versed in latest environmental and sustainability technologies pertaining to cooling systems and heat transfer. Kieran has worked on major projects in Ireland, the Middle East and Africa. Kieran has specific experience as a Design Engineer on a variety of project types for major multi-national companies from concept through to handover.</p>
         </div>
         <div class="our-people-column w-col w-col-6">
-          <h1 class="our-people-header">Stephen Totten</h1>
-          <h1 class="our-other-people-sub-header">Senior E&amp;I Designer</h1>
+          <h1 class="our-people-subheader-text">Stephen Totten</h1>
+          <h1 class="our-other-people-sub-header-2">Senior E&amp;I Designer</h1>
           <p class="our-other-people-text">Stephen has 40 years’ experience, as an Electrical and Instrumentation Designer, in the pharmaceutical, brewing and beverage industries. He has worked on data centres for multiple clients particularly focusing on fire detection, alarm and security systems, while also having a detailed knowledge of LV distribution design. Stephen has an extensive CV and has worked with multi-national companies such as Merck, Pfizer, Amgen, Leo Pharma and Guinness. He has been involved in the electrical, instrument and PLC control systems design on multiple process and utility projects.</p>
-          <h1 class="our-other-people-header">Amy Jacob</h1>
-          <h1 class="our-other-people-sub-header">Mechanical Project Engineer </h1>
+          <h1 class="our-people-subheader-text">Amy Jacob</h1>
+          <h1 class="our-other-people-sub-header-2">Mechanical Project Engineer </h1>
           <p class="our-other-people-text">Amy has a masters degree in Mechanical and Manufacturing Engineering from Trinity College Dublin and worked initially in the semi-conductor industry as a Process Engineer before spending some time in Toronto, Canada as a Technical Consultant evaluating R&amp;D technologies and solutions for companies in energy, manufacturing, construction, IT, food &amp; beverage, life sciences &amp; biotechnology sectors.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="careers">
+  <div id="careers" class="careers">
     <div class="div-block-5">
       <h1 class="career-header">Careers</h1>
       <div class="seperator"></div>
       <div class="w-row">
-        <div class="careers-column w-col w-col-6"><img src="images/Careers.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" srcset="images/Careers-p-800.jpeg 800w, images/Careers.jpg 1007w" alt="" class="our-services-img"></div>
+        <div class="careers-column career-column-img w-col w-col-6"><img src="images/Careers.jpg" loading="lazy" sizes="50vw" srcset="images/Careers-p-800.jpeg 800w, images/Careers.jpg 1007w" alt="" class="our-services-img"></div>
         <div class="careers-column w-col w-col-6">
-          <p class="career-text">We’re always looking for innovative, enthusiastic and experienced people to join our team. If you think you’d be a good fit and would like to get involved, please send your CV and a cover letter to info@ampromech.ie</p>
+          <p class="career-text">We’re always looking for innovative, enthusiastic and experienced people to join our team. If you think you’d be a good fit and would like to get involved, please send your CV and a cover letter to <a href="mailto:info@ampromec.ie?Subject=Joining%20the%20team" class="link email-links">info@ampromech.ie</a>
+          </p>
           <p class="career-text">You can also stay up to date with any vacancies and company news by following us on LinkedIn! </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="contact-us">
+  <div id="contact-us" class="contact-us">
     <div class="div-block-8">
       <h1 class="contact-us-header">Contact us</h1>
       <div class="seperator"></div>
-      <p class="contact-us-paragraph">5 Fitzwilliam Square, Dublin 2, D02 K251, Ireland<br>info@ampromech.ie<br>01-2343734</p>
+      <p class="contact-us-paragraph">5 Fitzwilliam Square, Dublin 2, D02 K251, Ireland<br>
+        <a href="mailto:info@ampromec.ie?Subject=General%20Query" class="email-links">info@ampromech.ie</a><br>01-2343734
+      </p>
     </div>
   </div>
   <div class="footer">
     <div class="container-7 w-container">
       <a href="https://www.linkedin.com/company/ampromech/" class="w-inline-block"><img src="images/fa-fa-linkedin.svg" loading="lazy" alt="" class="image-6"></a>
-      <div class="text-block"> © Ampromech Consulting Ltd 2021 | CRO 625359</div>
+      <div class="text-block"> © Ampromech Consulting Ltd 2021 | Reg. #625359</div>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=603e23274916bb7931ca5f4b" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
